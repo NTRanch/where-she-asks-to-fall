@@ -1,0 +1,15 @@
+[package]
+name = "torogao-fall"
+version = "0.1.0"
+edition = "2024"
+license = "BSD-2-Clause"
+rust-version = "1.85"
+description = "Clean-room Where She Asks to Fall systems for the Torogao remake programme: the 100-day Surrender Curriculum protocol as data + systems — calendar pacing, the four-beat day loop, six layer keepers' meters and exits, mantra checks, and the versioned save vocabulary (games/where-she-asks-to-fall-design.md, D-1140). No studied-game assets, text, or code."
+
+[dependencies]
+ron = "0.8"
+serde = { version = "1", features = ["derive"] }
+
+[[bin]]
+name = "fall-smoke"
+path = "src/main.rs"
